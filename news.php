@@ -6,7 +6,6 @@
     <title>News</title>
 </head>
 <body>
-
 <?php
 class News
 {
@@ -16,22 +15,20 @@ class News
     
     public function __construct($title, $date, $content)
     {
-        $this-> title = $title;
-        $this-> date = $date;
-        $this-> content = $content;
-     
+        $this->title = $title;
+        $this->date = $date;
+        $this->content = $content;
     }
     public function createNews()
     {
-        echo "Что случилось: ".$this->title."<br><br>";
-        echo "Дата: ".$this->date."<br><br>";
-        echo "Новость: ".$this->content."<br><br>";
+        echo "Что случилось: ".$this->title."<br>";
+        echo "Дата: ".$this->date."<br>";
+        echo "Новость: ".$this->content."<br>";
     }
 }
 
-$news1 = new News ('Заголовок', 'Как давно', 'Содержимое');
+$news1 = new News('Заголовок', 'Как давно', 'Содержимое');
 $news1->createNews();
-
 ?>
 </body>
 </html>
